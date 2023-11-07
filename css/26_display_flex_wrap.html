@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        border: 3px dotted black;
+        /* 실제크기 가지기 */
+        /* width를 33.333으로 지정하면 한 줄에 3개씩 배치도 가능 */
+        flex-wrap: wrap;
+      }
+      .item {
+        background-color: yellow;
+        border: 2px solid blue;
+        width: 150px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+    </div>
+    <script></script>
+  </body>
+</html>

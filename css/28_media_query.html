@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- viewport란? -->
+    <!-- 모바일 웹에서 웹페이지가 상요자에게 보여지는 영역, width를 
+    devicewidth로 1:1로 바꿔준다. -->
+    <!-- 미디어쿼리란? -->
+    <!-- 미디어 타입: 어떤 미디어타입? : screen, print, all... -->
+    <!-- 미디어 지정 규칙 :  -->
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aqua;
+      }
+
+      /* 미디어 쿼리 */
+      /* max-, min-, 접두사를 사용할 수 있음 */
+      /* 또는 orientation: landscape(가로) portrait(세로) fh 가로 모드도 판별가능*/
+      @media screen and (max-width: 1000px) {
+        body {
+          background-color: blue;
+        }
+      }
+      /* 코드의 우선순위는 아래부터 */
+      /* 이 조건으로 flexbox 축을 바꿀 수도 있음 */
+      @media screen and (max-width: 600px) {
+        body {
+          background-color: pink;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script></script>
+  </body>
+</html>
