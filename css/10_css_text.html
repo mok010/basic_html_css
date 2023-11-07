@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .text-center {
+        text-align: center;
+      }
+
+      .text-right {
+        text-align: right;
+      }
+
+      .text-left {
+        text-align: left;
+      }
+
+      .text-blue {
+        color: blue;
+      }
+
+      .underline {
+        text-decoration: underline;
+      }
+
+      .overline {
+        text-decoration: overline;
+      }
+
+      .delline {
+        text-decoration: line-through;
+      }
+
+      .plain {
+        text-decoration: none;
+      }
+
+      /* text-decoration */
+      /* 4가지 하위 프로퍼티 (border처럼) */
+      /* text-decoration-style : 장식선 스타일(직선, 점선 등) */
+      /* text-decoration-line : 장식선 색상 */
+      /* text-decoration-thickness : 장식선 두꼐 */
+
+      .underover {
+        text-decoration: dashed underline overline lawngreen 4px;
+        /* text-decoration-style: dashed; */
+        /* text-decoration-line: underline overline; */
+        /* text-decoration-color: lawngreen; */
+      }
+
+      /* 모든 알파벳문자를 대문자로 변환 */
+      .uppercase {
+        text-transform: uppercase;
+      }
+
+      /* 모든 알파벳문자를 소문자로 변환 */
+      .lowercase {
+        text-transform: lowercase;
+      }
+
+      /* 영어문장에서 첫단어만 대문자로 변환 */
+      .capitalize {
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 기본적인 텍스트 관련 스타일링 -->
+    <h1 class="text-center">가운데 정렬</h1>
+    <h1 class="text-right">오른쪽 정렬</h1>
+    <!-- 텍스트 색상 -->
+    <h1 class="text-blue">파랑색</h1>
+
+    <!-- 텍스트 장식선 -->
+    <p class="underline">밑줄을 가진 글씨 입니다.</p>
+    <p class="overline">윗줄을 가진 글씨 입니다.</p>
+    <p class="delline">취소선을 가진 글씨 입니다.</p>
+    <p>
+      <a href="" class="plain">링크인 a태그의 기본 밑줄을 없앤 글씨입니다</a>
+    </p>
+    <p class="underover">윗줄과 밑줄 점선</p>
+
+    <!-- 텍스트 변환 -->
+    <p class="uppercase">all letters are converted to uppercase.</p>
+    <p class="lowercase">ALL LETTERS ARE CONVERTED TO LOWRERCASE.</p>
+    <p class="capitalize">every first letters are converted to uppercase.</p>
+    <!-- 근데 눈에만 보이는 거고 실제 입력값의 변화는 js로 처리해야 함 -->
+    <input type="text" name="" id="" class="uppercase" />
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      /* .table { */
+      /* border: 1px solid black; */
+      /* width: 100%; */
+      /* } */
+
+      /* .table tr th, */
+      /* .table tr td { */
+      /* border: 1px solid black; */
+      /* border-collapse: collapse; */
+      /* } */
+
+      /* .striped-table tbody tr:nth-child(2n + 1) { */
+      /* background-color: maroon; */
+      /* } */
+
+      /* 만약 이름이 같은 태그가 위에도 나오고 아래에도 나온다면 위에 있는것이 아래와 병합된다. 대신 아래 우선 */
+    </style>
+  </head>
+  <body>
+    <!-- css를 적용하는 방법 3가지 -->
+    <!-- 1. inline style : html 시작태그에 style 속성을 통해 직접 저장 -->
+    <!-- 2. internal css : head 태그 안에 <style> 태그에 스타일을 지정 -->
+    <!-- 3. external css : 별도의 css 파일을 만들고 <head> 태그 안에 css 파일을 삽입하여 사용 -->
+    <a href="" style="text-decoration: none">별이의 콤퓨타 공부</a>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>이메일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>유재석</th>
+          <th>000-0000-0000</th>
+          <th>aa@gmail.com</th>
+        </tr>
+        <tr>
+          <th>송지효</th>
+          <th>000-1111-0000</th>
+          <th>bb@gmail.com</th>
+        </tr>
+        <tr>
+          <th>김종국</th>
+          <th>000-2222-0000</th>
+          <th>cc@gmail.com</th>
+        </tr>
+        <tr>
+          <th>양세찬</th>
+          <th>000-3333-0000</th>
+          <th>dd@gmail.com</th>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <table class="table striped-table">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>이메일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>유재석</th>
+          <th>000-0000-0000</th>
+          <th>aa@gmail.com</th>
+        </tr>
+        <tr>
+          <th>송지효</th>
+          <th>000-1111-0000</th>
+          <th>bb@gmail.com</th>
+        </tr>
+        <tr>
+          <th>김종국</th>
+          <th>000-2222-0000</th>
+          <th>cc@gmail.com</th>
+        </tr>
+        <tr>
+          <th>양세찬</th>
+          <th>000-3333-0000</th>
+          <th>dd@gmail.com</th>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
