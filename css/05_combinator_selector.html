@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 복합선택자 */
+      /* 하위 선택자 방식 */
+      /* section태그를 찾고 그 하위 중 모든 ul 태그를 찾는다는 뜻 */
+
+      /* section ul { */
+      /* border: 1px solid black; */
+      /* } */
+
+      /* 자식 선텍자 방식 */
+      /* 하위 1개만, 손주는 찾지 않는다.  */
+
+      section > ul {
+        border: 1px solid black;
+      }
+
+      /* 인접형제 선택자 */
+      /* 동렬에서 자로 다음에 있는 태그만 찾음 */
+
+      h1 + ul {
+        background-color: blue;
+      }
+
+      /* 일반형제 선택자 */
+      /* 형제를 다 찾음  */
+
+      /* h1 ~ ul { */
+      /* background-color: blue; */
+      /* } */
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>p태그</p>
+      <ul>
+        <li>
+          li태그
+          <ul>
+            <li>li태그</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <div>
+      <h1>h1태그</h1>
+      <ul>
+        <li>li태그</li>
+      </ul>
+      <ul>
+        <li>li태그</li>
+      </ul>
+    </div>
+  </body>
+</html>
