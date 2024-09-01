@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googoleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+      body {
+        font-family: "Noto Sans KR", sans-serif;
+        color: #222;
+        line-height: 1.5em;
+      }
+      a {
+        color: #666464;
+        text-decoration: none;
+        background-color: #fff;
+        padding: 7px;
+        border-radius: 3px;
+      }
+      .items {
+        text-align: center;
+      }
+      .item {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        margin: 2px;
+        border: 1px #d9d9d9 solid;
+      }
+      .item:hover .caption {
+        opacity: 1;
+      }
+      .item img {
+        width: 100%;
+        height: 100%;
+      }
+      .caption {
+        width: 300px;
+        height: 300px;
+        background-color: #00000080;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+        padding-top: 10px;
+        opacity: 0;
+        transition: 0.5s;
+      }
+      .caption a:hover {
+        background-color: teal;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="items">
+      <div class="item">
+        <img src="images/hunidifier.jpg" alt="" />
+        <div class="caption">
+          <h2>Air Puff Portable Mini Humidifier</h2>
+          <p>
+            Keep the air around you moist even in dry environments. Convenient
+            USB charging allows for use anytime, anywhere.
+          </p>
+          <p>Price : <s>$12</s> -> $10</p>
+          <a href="">View detail</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/pillow.jpg" alt="" />
+        <div class="caption">
+          <h2>Premium Memory Foam Neck Pillow</h2>
+          <p>
+            Ergonomically designed to relieve neck and shoulder fatigue. Perfect
+            for comfortable rest during travel or at the office.
+          </p>
+          <p>Price : <s>$13</s> -> $9</p>
+          <a href="">View detail</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/earbuds.jpg" alt="" />
+        <div class="caption">
+          <h2>Wireless Bluetooth Earbuds 5.0</h2>
+          <p>
+            Enjoy crystal-clear sound and long battery life with these wireless
+            earbuds. Compatible with various devices and highly portable.
+          </p>
+          <p>Price : <s>$12</s> -> $11</p>
+          <a href="">View detail</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
