@@ -1,0 +1,58 @@
+@import url("https://fonts.googoleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #222;
+  line-height: 1.5em;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.icon {
+  width: 125px;
+  height: 125px;
+  margin: 10px;
+  position: relative;
+}
+.icon:hover span {
+  opacity: 1;
+  transition: 0.5s;
+  visibility: visible;
+}
+.icon span {
+  background-color: #000;
+  color: #fff;
+  width: 300px;
+  position: absolute;
+  /* 이미 ab이 있으면 re가 있다고 봄 */
+  /* 어떤 요소든 po a이면 inblock으로 변경됨 */
+  text-align: center;
+  padding: 10px;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  opacity: 0;
+  /* 하지만 이경우 존재하는 구역이기떄문에 구역으로 잡힌다.  */
+  visibility: hidden;
+}
+.icon span:after {
+  content: "";
+  /* 가상 클래스 before after은 무조건 content시작 */
+  position: absolute;
+  background-color: #000;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg) translateX(-50%);
+  /* transform을 두번 사용 할 수 없음 */
+  bottom: -5px;
+  left: 50%;
+  /* h10이니까 그 반인 5px */
+}
